@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Demystifying GSoC 2027: a visual guide to open-source contributions, choosing a community, and writing a proposal. GDG Cloud Nagpur, with Shekhar Rajak.">
+  <title>Demystifying GSoC 2027 · Shekhar Rajak</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="css/deck.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section class="cover" data-title="Welcome" data-timing="180" aria-labelledby="cover-title">
+        <p class="eyebrow">GDG DevFest Nagpur 2026 <span>25 OCTOBER 2026</span></p>
+        <h1 id="cover-title">Demystifying<br><span class="blue">GSoC 2027</span></h1>
+        <p class="cover-subtitle">Your first steps into open source</p>
+        <div class="speaker"><strong>Shekhar Rajak</strong><span>Senior Software Engineer &amp; OSS Evangelist</span></div>
+        <div class="profile-links"><a href="https://github.com/Shekharrajak">GitHub / Shekharrajak</a><a href="https://www.linkedin.com/in/shekharrajak/">LinkedIn / shekharrajak</a></div>
+        <div class="cover-github"><a id="cover-github-qr" class="qr github-qr" data-qr-size="198" href="https://github.com/Shekharrajak" aria-label="Open Shekhar Rajak's GitHub profile"></a><a href="https://github.com/Shekharrajak">@Shekharrajak</a></div>
+        <img class="avatar cover-avatar" src="assets/characters/presenter-intro-notes.png" alt="Shekhar's illustrated avatar waving and holding a notebook" width="1024" height="1536">
+        <div class="cover-route" aria-label="Talk roadmap"><span>First contribution</span><b aria-hidden="true">-&gt;</b><span>Project discussion</span><b aria-hidden="true">-&gt;</b><span>Proposal</span></div>
+        <aside class="notes">
+          <p>Welcome to GDG Cloud Nagpur. Whether you are studying, working, self-taught, or changing careers, this session will help you choose a useful next step into open source. GSoC is one structured route; the contribution skills are useful beyond selection.</p>
+          <p>Ask: Who has never opened a pull request? Who has contributed before? Who is fitting this around a job? Briefly acknowledge each group and describe the audience for replay viewers. Today we will cover what the program is, preparation, choosing a community, and proposals.</p>
+          <p>Source: <a href="https://gdg.community.dev/events/details/google-gdg-cloud-nagpur-presents-gsoc-2027-complete-guide/">GDG Cloud Nagpur event</a>. Program facts reflect official guidance checked on 25 October 2026; 2027 rules and dates must be checked when published.</p>
+        </aside>
+      </section>
+
+      <section class="program" data-title="The program" data-timing="300" aria-labelledby="program-title">
+        <p class="eyebrow">01 / THE PROGRAM</p>
+        <h2 id="program-title">Understanding GSoC</h2>
+        <p class="lede">A global, online program for new open-source contributors</p>
+        <div class="program-diagram" aria-label="Google supports the program; organizations mentor contributors">
+          <article class="program-box google"><span class="diagram-index blue">01</span><h3>Google</h3><p>Program administration<br>and stipend</p></article>
+          <span class="connector" aria-hidden="true">-&gt;</span>
+          <article class="program-box organization"><span class="diagram-index green">02</span><h3>Open-source<br>organization</h3><p>Project direction<br>and mentorship</p></article>
+          <span class="connector" aria-hidden="true">-&gt;</span>
+          <article class="program-box contributor"><span class="diagram-index orange">03</span><h3>You</h3><p>Implementation,<br>reviews, and delivery</p></article>
+        </div>
+        <div class="project-sizes fragment" data-fragment-index="0"><p class="small-label">APPROXIMATE PROJECT EFFORT</p><div><span><strong>90</strong> hours <small>Small</small></span><span><strong>175</strong> hours <small>Medium</small></span><span><strong>350</strong> hours <small>Large</small></span></div></div>
+        <p class="takeaway fragment" data-fragment-index="1">Mentored contribution to a real codebase.<br><strong>You are a contributor, not a Google employee or intern.</strong></p>
+        <img class="avatar program-avatar" src="assets/characters/presenter-cover-curious.png" alt="Curious avatar presenting the program structure" width="1024" height="1536">
+        <p class="source"><a href="https://developers.google.com/open-source/gsoc/faq">Official GSoC FAQ</a> · Current guidance; verify the 2027 rules</p>
+        <aside class="notes">
+          <p>GSoC is entirely online. Google runs the program, while contributors work with mentors in an open-source organization. The diagram shows responsibilities, not an employment or reporting hierarchy. A stipend is available to eligible contributors who pass evaluations; it is not a salary or a job guarantee.</p>
+          <p>Reveal project sizes. These are estimates of total project effort, not weekly hours. Choose scope and availability together. Work includes understanding the codebase, design discussions, implementation, testing, documentation, and reviews. GSoC experience is valuable evidence of collaboration, but does not automatically prove that code is deployed or that it scales globally.</p>
+          <p>Reveal the distinction about employment. Describe successful participation accurately with the mentoring organization. Sources: <a href="https://developers.google.com/open-source/gsoc/faq">Official FAQ</a>; <a href="https://summerofcode.withgoogle.com/">Program overview</a>.</p>
+        </aside>
+      </section>
+
+      <section class="milestones" data-title="Eligibility & timeline" data-timing="360" aria-labelledby="milestones-title">
+        <p class="eyebrow">02 / ELIGIBILITY &amp; TIMING</p>
+        <h2 id="milestones-title">Milestones to 2027</h2>
+        <div class="eligibility"><p class="small-label">CURRENT ELIGIBILITY BASICS</p><p><strong>18+ at registration</strong><span>Student or open-source beginner</span></p><p class="eligibility-detail">Other program requirements apply. A job title alone does not determine eligibility.</p></div>
+        <img class="avatar timeline-avatar" src="assets/characters/presenter-planning.png" alt="Thoughtful avatar holding a notebook and indicating the preparation timeline" width="1024" height="1536">
+        <div class="timeline fragment" data-fragment-index="0" aria-label="Preparation now, expected organization announcement in February, applications in March to April, selection and bonding around May, then coding and evaluations">
+          <article class="timeline-stop now"><span class="timeline-dot"></span><p class="when">NOW – JAN</p><h3>Preparation</h3><p>Git, local setup,<br>small contributions</p></article>
+          <article class="timeline-stop"><span class="timeline-dot"></span><p class="when">~ FEB</p><h3>Organizations</h3><p>Check the selected<br>organizations &amp; ideas</p></article>
+          <article class="timeline-stop"><span class="timeline-dot"></span><p class="when">~ MAR – APR</p><h3>Applications</h3><p>Discuss scope,<br>submit a proposal</p></article>
+          <article class="timeline-stop"><span class="timeline-dot"></span><p class="when">~ MAY</p><h3>Selection<br>&amp; bonding</h3><p>Agree milestones<br>with your mentor</p></article>
+          <article class="timeline-stop"><span class="timeline-dot"></span><p class="when">~ MAY / JUN ONWARD</p><h3>Coding &amp;<br>evaluations</h3><p>Deliver, review,<br>and stay involved</p></article>
+        </div>
+        <p class="timeline-caveat">2027 dates are provisional · Official timeline currently lists 2026 · Extended projects can run into autumn</p>
+        <p class="takeaway fragment" data-fragment-index="1">Preparation can start before organizations are announced.</p>
+        <p class="source"><a href="https://developers.google.com/open-source/gsoc/timeline">Official timeline</a> · <a href="https://developers.google.com/open-source/gsoc/faq">Full eligibility requirements</a> · Checked 25 Oct 2026</p>
+        <aside class="notes">
+          <p>Current guidance includes age 18 or above at registration, being eligible to work in the country of residence, student or open-source beginner status, participation limits, and applicable location restrictions. Review the full current rules rather than treating these two labels as a complete eligibility test. Working professionals may be eligible as newcomers to open source; extensive open-source experience changes the situation. Experienced contributors can contribute directly and explore mentoring opportunities.</p>
+          <p>Reveal the timeline and distinguish our preparation plan from the expected program calendar. The official page currently gives 2026 dates and general annual timing, not confirmed 2027 dates. March-April is a planning estimate, not an application deadline. Selection and bonding come before coding; project lengths vary and extensions can continue into autumn. Check the official deadline and timezone once 2027 is published.</p>
+          <p>Students: account for exams and graduation. Professionals: account for workload and existing employment obligations. Neither group should promise unavailable hours. Early engagement helps, but preparation is not a guarantee of selection.</p>
+          <p>Sources: <a href="https://developers.google.com/open-source/gsoc/faq">Eligibility FAQ</a>; <a href="https://developers.google.com/open-source/gsoc/timeline">Official timeline</a>.</p>
+        </aside>
+      </section>
+
+      <section class="first-pr" data-title="Your first pull request" data-timing="480" aria-labelledby="pr-title">
+        <p class="eyebrow">03 / YOUR FIRST CONTRIBUTION</p>
+        <h2 id="pr-title">Zero to First Pull Request</h2>
+        <p class="lede">A small, useful change is a good place to begin.</p>
+        <div class="staircase" aria-label="Four steps to a first contribution">
+          <article class="step step-one"><span>01</span><h3>Git &amp;<br>Markdown</h3><p>Fork · branch<br>clear commits</p></article>
+          <article class="step step-two fragment" data-fragment-index="0"><span>02</span><h3>Run it<br>locally</h3><p>Read CONTRIBUTING.md<br>follow the setup</p></article>
+          <article class="step step-three fragment" data-fragment-index="1"><span>03</span><h3>Make a<br>useful change</h3><p>Docs · tests<br>good first issues</p></article>
+          <article class="step step-four fragment" data-fragment-index="2"><span>04</span><h3>Work through<br>review</h3><p>Explain · listen<br>revise the patch</p></article>
+        </div>
+        <img class="avatar pr-avatar" src="assets/characters/presenter-encouraging.png" alt="Encouraging avatar welcoming a newcomer to the first contribution steps" width="1024" height="1536">
+        <blockquote class="community-message"><span class="small-label">A USEFUL FIRST MESSAGE</span>“I followed the setup guide and hit this error.<br>I tried these steps. Is this the expected command?”</blockquote>
+        <p class="source">Example: reproduce an incorrect setup command, propose a correction, and respond to feedback</p>
+        <aside class="notes">
+          <p>Define a fork as your copy of a repository, a branch as an isolated line of work, and a pull request as a proposed change for review. Some communities use different hosting and review tools; follow their instructions. Learn only enough Git to work safely, then practice on a small change.</p>
+          <p>Walk through a hypothetical setup guide with an incorrect command. Confirm that the issue is reproducible. Read CONTRIBUTING.md, check existing issues and pull requests, then ask whether a correction is welcome. Submit a focused documentation patch describing the original problem and how you checked the correction. Respond to review and update the patch. A first pull request does not have to be merged immediately.</p>
+          <p>Do not demand an assignment or open lots of shallow patches. Use the project's preferred public channel; keep questions specific and allow volunteers time to respond. A good first issue label is a clue, not a promise that the issue is easy or unclaimed.</p>
+          <p>Students can start with setup and documentation. Working developers can bring debugging and testing experience, while still learning the community's practices. Useful contributions matter beyond GSoC.</p>
+        </aside>
+      </section>
+
+      <section class="selection" data-title="Choosing a community" data-timing="420" aria-labelledby="selection-title">
+        <p class="eyebrow">04 / CHOOSING A COMMUNITY</p>
+        <h2 id="selection-title">Choosing Your Target Group</h2>
+        <div class="matrix-area"><p class="matrix-y">COMMUNITY RESPONSIVENESS</p><div class="matrix" role="img" aria-label="Illustrative matrix: responsive communities can have either lower or higher popularity. Organization size does not predict selection chances."><span class="matrix-label high-response">Higher</span><span class="matrix-label low-response">Lower</span><div class="quadrant q1"><strong>Less visible,<br>responsive</strong><span>Worth exploring</span></div><div class="quadrant q2"><strong>Well known,<br>responsive</strong><span>Worth exploring</span></div><div class="quadrant q3"><strong>Limited interaction</strong><span>Investigate further</span></div><div class="quadrant q4"><strong>Famous name,<br>limited interaction</strong><span>Investigate further</span></div></div><p class="matrix-x">Lower <span>ORGANIZATION POPULARITY</span> Higher</p><p class="matrix-caption">Illustrative framework · Popularity does not predict acceptance</p></div>
+        <div class="selection-checks fragment" data-fragment-index="0"><h3>Look for evidence</h3><ul><li><strong>Stack fit</strong><span>Can you work in this codebase?</span></li><li><strong>Relevant ideas</strong><span>Does the problem interest you?</span></li><li><strong>Constructive reviews</strong><span>Do newcomers get useful guidance?</span></li></ul></div>
+        <img class="avatar selection-avatar" src="assets/characters/presenter-evaluating.png" alt="Avatar thoughtfully comparing community choices" width="1024" height="1536">
+        <p class="selection-note fragment" data-fragment-index="1">Use the 2024–2026 archives to discover communities.<br><strong>Past participation does not guarantee a 2027 return.</strong></p>
+        <p class="source"><a href="https://summerofcode.withgoogle.com/programs">Past programs</a> · Check each organization's contribution and communication guidelines</p>
+        <aside class="notes">
+          <p>This matrix is a decision aid, not measured organization rankings. Responsiveness can be assessed through recent public issue discussions, thoughtful pull request reviews, newcomer guidance, and an active project ideas page. A Slack or Discord server is not required; mailing lists and issue trackers can be healthy community spaces too.</p>
+          <p>Popularity is a weak proxy for competition and does not tell you mentor capacity or acceptance probability. Explore responsive communities at either popularity level. Do not treat a slow individual response as proof of poor health: maintainers volunteer across timezones. Look at patterns over time.</p>
+          <p>Reveal the checklist. Pick a stack you can work in and a problem you want to understand. Shortlist a few communities, then concentrate on one or two serious discussions rather than flooding maintainers. Prior participation helps discover candidates but does not predict the 2027 organization list. If an organization is not selected, continue contributing or reassess another relevant community without assuming the same proposal transfers.</p>
+          <p>Sources: <a href="https://summerofcode.withgoogle.com/programs">Past programs</a>; <a href="https://google.github.io/gsocguides/student/choosing-an-organization">Contributor guide: choosing an organization</a>.</p>
+        </aside>
+      </section>
+
+      <section class="proposal" data-title="Your proposal" data-timing="540" aria-labelledby="proposal-title">
+        <p class="eyebrow">05 / YOUR PROPOSAL</p>
+        <h2 id="proposal-title">Anatomy of a Winning Proposal</h2>
+        <div class="proposal-paper"><div class="paper-top"><span class="small-label">ILLUSTRATIVE PROJECT</span><span class="paper-mark">DRAFT / 02</span></div><h3>Clearer CSV import errors</h3><div class="paper-row"><span class="row-number">01</span><div><h4>Problem &amp; community benefit</h4><p>Users cannot tell which input row failed.</p></div></div><div class="paper-row fragment" data-fragment-index="0"><span class="row-number">02</span><div><h4>Approach &amp; acceptance criteria</h4><p>Report row + field; preserve valid imports.<br>Add tests for malformed input.</p></div></div><div class="paper-row fragment" data-fragment-index="1"><span class="row-number">03</span><div><h4>Milestones &amp; evidence</h4><p>Weekly deliverables, review time, and buffer.<br>Link relevant work and project discussions.</p></div></div><p class="paper-bottom">Required scope first · Stretch goals clearly separated</p></div>
+        <div class="proposal-side"><h3>A realistic schedule</h3><div class="schedule" aria-label="Example milestones: investigate, implement, verify, review and buffer"><span>Investigate</span><span>Implement</span><span>Verify</span><span>Review + buffer</span></div><p>Include exams, work commitments,<br>and planned time away.</p><p class="proposal-rule fragment" data-fragment-index="2"><strong>Follow the organization's template.</strong><br>Ask for feedback early.</p></div>
+        <img class="avatar proposal-avatar" src="assets/characters/presenter-cover-confident.png" alt="Confident avatar presenting a scoped proposal" width="1024" height="1536">
+        <p class="source"><a href="https://google.github.io/gsocguides/student/writing-a-proposal">Official proposal guide</a> · Check the organization's AI policy and submission requirements</p>
+        <aside class="notes">
+          <p>The title is about improving the quality of a proposal, not guaranteeing selection. Begin with the organization's required template. Explain the user problem, community benefit, technical approach, scope, deliverables, risks, and relevant prior work. Specificity should match the project: not every project needs an API or database schema.</p>
+          <p>The CSV example is hypothetical and demonstrates scoping; it is not a claim that this small change is automatically sufficient for a GSoC project. Show how the error should change, how valid behavior is preserved, and which tests establish success. In a complete proposal, break the agreed project scope into weekly outcomes with realistic review and integration time, and list dependencies and contingency plans.</p>
+          <p>Show merged contributions where available, but do not imply a universal merged-PR prerequisite. Relevant patches, investigations, tests, and mentor discussions can support capability, subject to the organization's own requirements. Explain your own contribution clearly.</p>
+          <p>Students: disclose exams. Professionals: make realistic time commitments and follow applicable employer requirements. Start with available time, then agree scope with mentors. Review the organization's AI policy; some reject AI-written proposals. Submit via the official GSoC application system before the deadline even if feedback is pending.</p>
+          <p>Source: <a href="https://google.github.io/gsocguides/student/writing-a-proposal">Official proposal guide</a>.</p>
+        </aside>
+      </section>
+
+      <section class="qa" data-title="Q&A & next steps" data-timing="900" aria-labelledby="qa-title">
+        <p class="eyebrow">06 / NEXT STEPS</p>
+        <h2 id="qa-title">Live Q&amp;A &amp; Next Steps</h2>
+        <div class="github-block"><a id="github-qr" class="qr github-qr" href="https://github.com/Shekharrajak" aria-label="Open Shekhar Rajak's GitHub profile"></a><a class="github-handle" href="https://github.com/Shekharrajak">github.com/Shekharrajak</a><p>Connect on GitHub</p></div>
+        <div class="next-week"><h3>Your next seven days</h3><ol><li><span>01</span><div><strong>Shortlist communities</strong><p>Choose a stack and a problem you care about.</p></div></li><li><span>02</span><div><strong>Run one project locally</strong><p>Follow its contribution guide.</p></div></li><li><span>03</span><div><strong>Make one useful contribution</strong><p>Ask a specific question or propose a small fix.</p></div></li></ol></div>
+        <img class="avatar qa-avatar" src="assets/characters/presenter-listening.png" alt="Avatar listening attentively and inviting questions" width="1024" height="1536">
+        <div class="qa-topics fragment" data-fragment-index="0"><span>Proposals</span><span>Exams &amp; work</span><span>Mentor communication</span><span>Backup plans</span></div>
+        <p class="source">Resources: <a href="https://summerofcode.withgoogle.com/">GSoC</a> · <a href="https://google.github.io/gsocguides/student/">Contributor guide</a> · <a href="https://developers.google.com/open-source/gsoc/timeline">Official timeline</a></p>
+        <aside class="notes">
+          <p>Spend a minute on next steps before opening questions so replay viewers leave with an action. Both QR codes in this deck link to https://github.com/Shekharrajak. Official resources are separate readable links. Put those links in the YouTube description too.</p>
+          <p>Reveal Q&amp;A topics. Repeat each question aloud before answering. If the room is quiet, cover: How many proposals? Focus on one or two high-quality drafts; current official rules permit up to three submitted proposals and only one acceptance. This recommendation is not an official limit. How to balance exams or work? Plan actual availability and discuss scope early. What if the org is not selected? Keep contributing, then reassess alternatives. How to approach mentors? Read the guide, describe what you tried, and ask a specific question in the preferred channel.</p>
+          <p>For experienced contributors who are outside contributor eligibility, direct contribution is still open; mentoring may be another route depending on community needs. Selection is one outcome. Learning to collaborate and contributing useful work remain worthwhile.</p>
+          <p>Sources: <a href="https://developers.google.com/open-source/gsoc/faq">Official FAQ</a>; <a href="https://google.github.io/gsocguides/student/">Contributor guide</a>. Thank GDG Cloud Nagpur and the audience.</p>
+        </aside>
+      </section>
+    </div>
+    <footer class="deck-footer"><span>Shekhar Rajak <span class="footer-separator">/</span> GDG Cloud Nagpur</span><span>Demystifying GSoC 2027</span></footer>
+  </div>
+  <script src="vendor/qrcodejs/qrcode.min.js"></script>
+  <script type="module" src="js/deck.js"></script>
+</body>
+</html>
